@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Change</title>
+    <style>
+        main {
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+            overflow: hidden;
+            justify-self: center;
+        }
+
+        div {
+            width: 400px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        button {
+            position: fixed;
+            width: 300px;
+            font-size: 30px;
+            border: 1px solid black;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            justify-self: center;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function changeImage() {
+            const image = document.getElementById('myImage');
+            if (image) {
+                image.src = "https://media.istockphoto.com/id/1703754111/photo/sunset-dramatic-sky-clouds.jpg?s=612x612&w=0&k=20&c=6vevvAvvqvu5MxfOC0qJuxLZXmus3hyUCfzVAy-yFPA="; // new image URL
+            }
+        }
+    </script>
+    <main>
+        <div>
+            <img src="https://platform.vox.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/19397812/1048232144.jpg.jpg?quality=90&strip=all&crop=0,10.736513278159,100,78.526973443682"
+                alt="Original Image" id="myImage">
+        </div>
+        <hr>
+        <div>
+            <button onclick="changeImage()">Change Image</button>
+        </div>
+    </main>
+</body>
+
+</html>

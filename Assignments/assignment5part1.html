@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Counter</title>
+    <style>
+        main {
+            width: 400px;
+            border: 2px solid black;
+            justify-self: center;
+            height: 400px;
+            justify-items: center;
+            background-color: rgb(197, 191, 255);
+            margin: 100px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            padding: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .buttons button {
+            width: 40px;
+            border: 2px solid black;
+            height: 30px;
+            font-size: 20px;
+        }
+        p{
+            font-size: 35px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var count = 1;
+        function check() {
+            if (count >= 10) {
+                alert('Maximum limit reached');
+            }
+            else if (count <= 0) {
+                alert('Minimum limit reached');
+            }
+        }
+        function add() {
+            count++;
+            document.querySelector('p').innerText=count;
+            check();
+        }
+        function sub() {
+            count--;
+            document.querySelector('p').innerText=count;
+            check();
+        }
+    </script>
+    <main>
+        <div class="header">
+            <img src="\Images\counterlogo.png" alt="" class="logo">
+            <h1>Counter App</h1>
+        </div>
+        <div class="counter">
+            <p>1</p>
+        </div>
+        <div class="buttons">
+            <button onclick="add()">+</button>
+            <button onclick="sub()">-</button>
+        </div>
+    </main>
+
+</body>
+
+</html>

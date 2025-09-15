@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: rgb(164, 42, 42);
+            color: white;
+            font-size: 40px;
+            justify-items: center;
+        }
+
+        h1{
+            text-align: center;
+            margin: 10px;
+        }
+        form{
+            border: 2px solid black;
+            width: 1000px;
+            margin: 20px;
+            justify-self: center;
+        }
+
+        table{
+            width: 100%;
+            justify-self: center;
+            padding: 5px;
+        }
+
+        .fields{
+            margin: 10px;
+            font-size: 24px;
+        }
+
+        #bus-image{
+            width: 600px;
+            height: 400px;
+        }
+
+        #button button{
+            width: 150px;
+            height: 50px;
+            background-color: rgb(164, 42, 42);
+            border-radius: 10%;
+            color: white;
+            font-size: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <table style="text-align: center;">
+            <tr>
+                <td><img src="buslogo.webp" alt="logo" class="bus-logo" style="width: 40px; height: 40px; border-radius: 50%;"></td>
+                <td>Book your seat now!</td>
+            </tr>
+        </table>
+    </nav>
+    <form action="">
+        <h1 class="main-heading">Welcome to Bus Booking System</h1>
+        <table>
+            <tr>
+                <td>
+                    <div class="fields">
+                        <label for="username">Username</label>
+                        <input type="text" name="username" id="username" required>
+                    </div>
+                    <div class="fields">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    <div class="fields">
+                        <label for="gender">Gender:</label>
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="male">
+                        <label for="female">Female</label>
+                        <input type="radio" name="gender" id="female">
+                        <label for="other">Other</label>
+                        <input type="radio" name="gender" id="other">
+                    </div>
+                    <div class="fields">
+                        <label for="city">Select your city</label>
+                        <select name="city" id="city">
+                            <option value="" disabled selected>Select</option>
+                            <option value="hyderabad">Hyderabad</option>
+                            <option value="delhi">Delhi</option>
+                            <option value="gzb">Ghaziabad</option>
+                            <option value="dehradun">Dehradun</option>
+                            <option value="kolkata">Kolkata</option>
+                            <option value="chennai">Chennai</option>
+                        </select>
+                    </div>
+                    <div class="fields" id="button">
+                        <a href="assignment2part2.html" target="_self"><button type="submit">Book Seat</button></a>
+                    </div>
+                </td>
+                <td><img src="busimage.webp" alt="bus image" id="bus-image"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

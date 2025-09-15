@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <p>0</p>
+    
+    <script>
+        var a=0;
+        function addition(){
+            a++;
+            document.querySelector('p').innerText=a;
+        }
+        function subtraction(){
+            a--;
+            document.querySelector('p').innerText=a;
+        }
+    </script>
+    <button onclick="addition()">+</button>
+    <button onclick="subtraction()">-</button>
+</body>
+</html>

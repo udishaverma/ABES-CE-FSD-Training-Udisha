@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let num1 = prompt("Enter number 1: ");
+        let num2 = prompt("Enter number 2: ");
+        document.write('Table 1<br>');
+        for (let i = 1; i <= 10; i++) {
+            document.write(num1*i + '<br>');
+        }
+        document.write('Table 2<br>');
+        for (let i = 1; i <= 10; i++) {
+            document.write(num2*i + '<br>');
+        }
+        document.write('<br>Even numbers in the tables <br>');
+        for (let i=1; i<=10;i++) {
+            if ((num1*i)%2==0) {
+                document.write(num1*i + ',');
+            }
+            else if ((num2*i)%2==0) {
+                document.write(num2*i + ',');
+            }
+        }
+        document.write('<br>Odd numbers in the table <br>');
+        for (let i=1; i<=10;i++) {
+            if (num1*i%2!=0) {
+                document.write(num1*i + ',');
+            }
+            else if ((num2*i)%2!=0) {
+                document.write(num2*i + ',');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Listener</title>
+    <style>
+        .udi {
+            background-color: rgb(239, 183, 255);
+        }
+        #write{
+            background-color: lavender;
+        }
+    </style>
+</head>
+<body>
+    <div id="udi">
+        <button onclick="add()">Click</button>
+        <p id="write"></p>
+    </div>
+    <script>
+        function add() {
+            document.getElementById("write").innerHTML = "<h1>Hello</h1>";
+        }
+    </script>
+</body>
+</html>
