@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Promises</title>
+</head>
+<body>
+    <script>
+        const mypromise=new Promise((resolve,reject)=>{
+            const password='udisha123';
+            if(password.length>8) {
+                resolve('password length is okay');
+            }
+            else {
+                reject('password should be of length greater than 8');
+            }
+        })
+
+        mypromise.then((msg)=>{
+            console.log(msg);
+        })
+        mypromise.catch((err)=>{
+            console.log(err);
+        }).finally(()=>{
+            console.log('we are coders');
+        })
+
+        //drawback - good for less number of promise objects, not good for a many promise objects
+    </script>
+</body>
+
+</html>
