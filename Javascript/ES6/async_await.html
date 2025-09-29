@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Async Await</title>
+</head>
+
+<body>
+    <script>
+        async function f() {
+            let promise = new Promise((resolve, reject) => {
+                setTimeout(() => resolve('done'), 2000)
+            });
+            let result=await Promise;
+            alert(result);
+        }
+        f();
+    </script>
+</body>
+
+</html>
