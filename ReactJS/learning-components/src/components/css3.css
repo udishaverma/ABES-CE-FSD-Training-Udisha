@@ -1,0 +1,10 @@
+#card {
+    border: 5px solid rgb(61, 61, 61);
+    height: 400px;
+    width: 400px;
+    margin: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10%;
+    box-shadow: 4px 4px 4px #999;
+}
