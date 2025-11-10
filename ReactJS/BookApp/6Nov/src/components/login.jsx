@@ -5,8 +5,8 @@ function Login() {
         <div>
             <h2>Login</h2>
             <form>
-                Email<input type="email" placeholder="Email" required /><br />
-                Password<input type="password" placeholder="Password" required /><br />
+                Email <input type="email" placeholder="Email" required /><br />
+                Password <input type="password" placeholder="Password" required /><br />
                 <button type="submit">Login</button>
             </form>
         </div>

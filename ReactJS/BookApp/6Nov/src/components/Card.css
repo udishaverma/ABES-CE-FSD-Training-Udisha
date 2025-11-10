@@ -1,0 +1,26 @@
+#udi {
+    border: 5px solid rgb(61, 61, 61);
+    height: 350px;
+    width: 400px;
+    margin: 20px;
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(216, 255, 220);
+    border-radius: 10%;
+}
+
+#flex {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    margin: auto;
+}
+
+#result {
+    font-size: 20px;
+}
+
+button {
+    margin: 10px;
+    border-radius: 5%;
+}
