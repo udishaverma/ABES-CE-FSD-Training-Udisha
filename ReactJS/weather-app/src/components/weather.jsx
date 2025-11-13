@@ -5,7 +5,7 @@ function Weather({ props, city, setCity }) {
   const [input, setInput] = useState(city);
 
   const handleSearch = () => {
-    setCity(input); // 👈 This triggers the useEffect in App.jsx
+    setCity(input);
   };
 
   return (
