@@ -57,14 +57,45 @@
 // })
 
 
-
+// COPY(sync)
 // const fs = require('fs');
-
 // fs.cpSync("IT-A.txt","A.txt");
 
+// append (sync)
 // const fs = require('fs');
 // fs.appendFileSync("./B.txt",`and we are coders`);
 
+// deleting file (sync)
+// const fs = require('fs');
+// fs.unlinkSync("./B.txt");
 
-const fs = require('fs');
-fs.unlinkSync("./B.txt");
+const fs=require('fs');
+// -----COPY(async)-------
+// fs.cp("./CE-A.txt","./IT-A.txt",(err)=>{
+//     if (err) {
+//         console.log('error',err);
+//     }
+//     else {
+//         console.log("Done.");
+//     }
+// });
+
+// -----APPENDING(async)-------
+// fs.appendFile("./CE-A.txt",` FSD Training`,(err)=>{
+//     if (err) {
+//         console.log('error',err);
+//     }
+//     else {
+//         console.log("Done.");
+//     }
+// });
+
+// -----DELETING A FILE(async)-------
+// fs.unlink("./A.txt",(err)=>{
+//     if (err) {
+//         console.log('error',err);
+//     }
+//     else {
+//         console.log("Done.");
+//     }
+// });
