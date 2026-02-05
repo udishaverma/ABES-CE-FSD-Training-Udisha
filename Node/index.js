@@ -99,3 +99,19 @@ const fs=require('fs');
 //         console.log("Done.");
 //     }
 // });
+
+
+const os=require('os');
+// console.log("Platform:", os.platform());
+
+// console.log("User:",os.userInfo());
+
+// console.log("CPU:", os.arch());
+
+// console.log("Free memory:",os.freemem(),"bytes");
+
+// console.log("Total memory:",os.totalmem(),"bytes");
+
+// console.log("System uptime:",os.uptime());
+
+console.log("Host name:",os.hostname());
