@@ -1,24 +1,4 @@
 // const http = require('http');
-
-// const myServer = http.createServer((req, res) => {
-//     if (req.url == '/') {
-//         res.end("ABES Engineering College");
-//     }
-//     else if(req.url == '/about') {
-//         res.end('We are students.');
-//     }
-//     else if(req.url == '/class') {
-//         res.end('CE-A');
-//     }
-//     else {
-//         res.end('404 Error');
-//     }
-// })
-
-// myServer.listen(8000,() => console.log('Server is running.'));
-
-
-// const http = require('http');
 // const fs = require('fs');
 // const path = require('path');
 
@@ -78,7 +58,13 @@
 
 
 
+// const fs = require('fs');
+
+// fs.cpSync("IT-A.txt","A.txt");
+
+// const fs = require('fs');
+// fs.appendFileSync("./B.txt",`and we are coders`);
+
+
 const fs = require('fs');
-
-fs.cpSync("IT-A.txt","A.txt");
-
+fs.unlinkSync("./B.txt");
