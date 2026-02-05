@@ -60,18 +60,25 @@
 
 // myServer.listen(8000, () => console.log('Server is running.'));
 
-const fs=require('fs');
+// const fs=require('fs');
 
 // fs.writeFileSync("./CE-A.txt","We are students of CE-A.");
 
 // const result = fs.readFileSync("./CE-A.txt","utf-8");
 // console.log(result);
 
-fs.readFile("./CE-A.txt","utf-8",(err,result)=>{
-    if (err) {
-        console.log('error',err);
-    }
-    else {
-        console.log(result);
-    }
-})
+// fs.readFile("./CE-A.txt","utf-8",(err,result)=>{
+//     if (err) {
+//         console.log('error',err);
+//     }
+//     else {
+//         console.log(result);
+//     }
+// })
+
+
+
+const fs = require('fs');
+
+fs.cpSync("IT-A.txt","A.txt");
+
